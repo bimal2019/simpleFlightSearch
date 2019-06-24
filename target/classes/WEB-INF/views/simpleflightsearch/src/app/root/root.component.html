@@ -1,0 +1,70 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="text-center border border-dark p-5">
+
+  <p class="h4 mb-9">Simple Flight Search</p>
+
+  <div class="md-form mb-2">
+     <div class="col">
+          <input type="text" formControlName="flightNumber" id="defaultRegisterFormFlightNumber" class="form-control"  placeholder="Flight number">
+      </div>
+    </div>
+      <div class="md-form mb-2">
+      
+      <div class="col">
+          <input type="text" formControlName="origin" id="defaultRegisterFormOrigin" class="form-control" placeholder="Origin">
+      </div>
+    </div>
+    <div class="md-form mb-2">
+      <div class="col">
+          <input type="text" formControlName="destination" id="defaultRegisterFormDestination" class="form-control" placeholder="Destination">
+      </div>
+    </div>
+  
+  <div class="md-form mb-2">
+ <div class="col">
+  <input type="text" formControlName="date" id="defaultRegisterFormDate" class="form-control" placeholder="Date">
+</div>
+</div>
+<div class="md-form mb-2">
+  <button class="btn btn-info" type="submit">Search</button>
+</div>
+  
+
+</form>
+
+
+
+<div class="table table-striped tabled-bordered">  
+  
+  <table class="table table-hover">  
+    <thead class="thead-dark">  
+      <tr>  
+        <th>Aircraft</th>  
+        <th>Arrival</th>  
+        <th>Carrier</th>  
+        <th>Departure</th>  
+        <th>Destination</th>  
+        <th>Distance</th> 
+        <th>Flight Number</th>  
+        <th>Origin</th>  
+        <th>Status</th>  
+        <th>Travel Time</th> 
+      </tr>  
+    </thead>  
+    <tbody>  
+      <tr *ngFor="let simpleflight of response">  
+        <td>{{simpleflight.aircraft}}</td>  
+        <td>{{simpleflight.arrival}}</td> 
+        <td>{{simpleflight.carrier}}</td> 
+        <td>{{simpleflight.departure}}</td> 
+        <td>{{simpleflight.destination}}</td> 
+        <td>{{simpleflight.distance}}</td> 
+        <td>{{simpleflight.flightNumber}}</td>
+        <td>{{simpleflight.origin}}</td> 
+        <td>{{simpleflight.status}}</td> 
+        <td>{{simpleflight.travelTime}}</td> 
+ 
+      </tr>  
+    </tbody>  
+  </table>  
+
+</div>  

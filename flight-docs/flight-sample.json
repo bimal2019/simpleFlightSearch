@@ -25,6 +25,18 @@
     "status": "Arrived at Gate"
   },
   {
+    "flightNumber": "0689",
+    "carrier": "UA",
+    "origin": "HOU",
+    "departure": "2018-01-31T07:45:00",
+    "destination": "ORD",
+    "arrival": "2018-01-31T11:18:00",
+    "aircraft": "Boeing 737-900",
+    "distance": 925,
+    "travelTime": "02:33",
+    "status": "Arrived at Gate"
+  },
+  {
     "flightNumber": "1160",
     "carrier": "UA",
     "origin": "IAH",
